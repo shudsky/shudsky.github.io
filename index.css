@@ -1,0 +1,44 @@
+/*Importing Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=IM+Fell+Great+Primer:ital@0;1&display=swap');
+/*General Classes*/
+:root
+{
+}
+
+footer
+{
+	text-align: center;
+	font-family: 'IM Fell Great Primer', serif;
+	font-size: 15px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*Headings*/
+#main-heading/*Heading used for my name at the top*/
+{
+	font-family: 'IM Fell English', serif;
+	font-style: italic;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: -25px;
+	color: var(--dark);
+}
+
+#second-heading/*Heading used for "Siovan Gecelovsky"*/
+{
+	font-family: 'IM Fell English', serif;
+	font-size: 20px;
+	text-align: center;
+	color: var(--dark);
+}
+
+#third-heading/*Heading used for "Siovan Gecelovsky"*/
+{
+	font-family: 'IM Fell Great Primer', serif;
+	/*font-style: italic;*/
+	font-size: 30px;
+	text-align: center;
+	color: var(--dark);
+}
