@@ -1,9 +1,19 @@
 /*Importing Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=IM+Fell+Great+Primer:ital@0;1&display=swap');
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
 /*General Classes*/
 :root
 {
+	--light: #D1DCDA;
+	--body: #000000;
+}
+
+body
+{
+	background-color: var(--light);/*#fafafa;Not totally white!*/
+	color: var(--body);
 }
 
 footer
@@ -13,7 +23,43 @@ footer
 	font-size: 15px;
 }
 
+table
+{
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------------------*/
+/*Classes*/
+.image
+{
+	text-align: center;
+}
+
+.element-heading
+{
+	font-family: 'IM Fell Great Primer', serif;
+	font-size: 25px;
+	letter-spacing: 2px; 
+	text-align: center;
+	/*padding-top: 10px;
+	margin-bottom: -20px;*/
+}
+
+.writeup
+{
+	font-family: 'IM Fell Great Primer', serif;
+	font-size: 20px;
+	text-align: left;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*IDs*/
+
 /*Headings*/
 #main-heading/*Heading used for my name at the top*/
 {
@@ -34,11 +80,26 @@ footer
 	color: var(--dark);
 }
 
-#third-heading/*Heading used for "Siovan Gecelovsky"*/
+#third-heading/*Heading used for "PORTFOLIO"*/
 {
 	font-family: 'IM Fell Great Primer', serif;
 	/*font-style: italic;*/
 	font-size: 30px;
 	text-align: center;
 	color: var(--dark);
+}
+
+#itchio-games
+{
+	background-color: #EB6960;
+}
+
+#web-projects
+{
+	background-color: #A3A4F5;
+}
+
+#art-projects
+{
+	background-color: #706563;
 }

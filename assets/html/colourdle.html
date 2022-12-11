@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		 <script src="colourdle.js" defer=""></script><!-- Linking js file -->
+		 <link rel="stylesheet" type="text/css" href="colourdle.css" /><!--Linking css sheet--> 
+		<title>Colourdle</title>
+	</head>
+	<body>
+		<!-- Input boxes -->
+		<div id="rectangle"></div>
+		<br>
+		<form class="inputChance">
+			<span class="chance1" id="chance1_1"></span><span id="arrowR1">▲</span>
+			<span class="chance1" id="chance1_2"></span><span id="arrowG1">▲</span>
+			<span class="chance1" id="chance1_3"></span><span id="arrowB1">▲</span>
+			<div id="inputRectangle1"></div>
+		</form>
+		<form class="inputChance">
+			<span class="chance2" id="chance2_1"></span><span id="arrowR2">▲</span>
+			<span class="chance2" id="chance2_2"></span><span id="arrowG2">▲</span>
+			<span class="chance2" id="chance2_3"></span><span id="arrowB2">▲</span>
+			<div id="inputRectangle2"></div>
+		</form>
+		<form class="inputChance">
+			<span class="chance3" id="chance3_1"></span><span id="arrowR3">▲</span>
+			<span class="chance3" id="chance3_2"></span><span id="arrowG3">▲</span>
+			<span class="chance3" id="chance3_3"></span><span id="arrowB3">▲</span>
+			<div id="inputRectangle3"></div>
+		</form>
+		<form class="inputChance">
+			<span class="chance4" id="chance4_1"></span><span id="arrowR4">▲</span>
+			<span class="chance4" id="chance4_2"></span><span id="arrowG4">▲</span>
+			<span class="chance4" id="chance4_3"></span><span id="arrowB4">▲</span>
+			<div id="inputRectangle4"></div>
+		</form>
+		<form class="inputChance">
+			<span class="chance5" id="chance5_1"></span><span id="arrowR5">▲</span>
+			<span class="chance5" id="chance5_2"></span><span id="arrowG5">▲</span>
+			<span class="chance5" id="chance5_3"></span><span id="arrowB5">▲</span>
+			<div id="inputRectangle5"></div>
+		</form>
+		<div id="answer"></div>
+		
+		<!-- User input box -->
+		<form id="userInput">
+			<input class="colourInput" id="redInput" type="number" min="0" max="255" required="true" name="R" autofocus="true">
+			<input class="colourInput" id="greenInput" type="number" min="0" max="255" required="true" name="G">
+			<input class="colourInput" id="blueInput" type="number" min="0" max="255" required="true" name="B">
+			<input id="submitButton" type="button" onclick="moveInputColour()" value="Check">
+		</form>
+	</body>
+</html>

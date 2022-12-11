@@ -1,0 +1,208 @@
+/*Importing Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+/*General Classes*/
+:root
+{
+	/*Colour palette:*/
+	--col: #000000;
+	--inputRect1: #ffffff;
+	--inputRect2: #ffffff;
+	--inputRect3: #ffffff;
+	--inputRect4: #ffffff;
+	--inputRect5: #ffffff;
+	--arrow: #ffc1b8;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*Specific Ids*/
+#rectangle
+{
+	margin: 0 auto;
+    width: 25%;
+    height: 100px;
+    background: var(--col);
+}
+#inputRectangle1
+{
+    width: 5%;
+    height: 50px;
+    display: inline-block;
+    margin-bottom: 25px;
+	margin-top: 25px;
+	margin-left: 8px;
+	vertical-align:top;
+    background-color: var(--inputRect1);
+}
+#inputRectangle2
+{
+    width: 5%;
+    height: 50px;
+    display: inline-block;
+    margin-bottom: 25px;
+	margin-top: 25px;
+	margin-left: 8px;
+	vertical-align:top;
+    background: var(--inputRect2);
+}
+#inputRectangle3
+{
+    width: 5%;
+    height: 50px;
+    display: inline-block;
+    margin-bottom: 25px;
+	margin-top: 25px;
+	margin-left: 8px;
+	vertical-align:top;
+    background: var(--inputRect3);
+}
+#inputRectangle4
+{
+    width: 5%;
+    height: 50px;
+    display: inline-block;
+    margin-bottom: 25px;
+	margin-top: 25px;
+	margin-left: 8px;
+	vertical-align:top;
+    background: var(--inputRect4);
+}
+#inputRectangle5
+{
+    width: 5%;
+    height: 50px;
+    display: inline-block;
+    margin-bottom: 25px;
+	margin-top: 25px;
+	margin-left: 8px;
+	vertical-align:top;
+    background: var(--inputRect5);
+}
+
+
+#arrowR1, #arrowG1, #arrowB1
+{
+	font-size: 25px;
+	color: var(--arrow);
+	display: inline-block;
+	margin-bottom: 25px;
+	margin-top: 30px;
+	vertical-align:top;
+	visibility: hidden;
+}
+
+#arrowR2, #arrowG2, #arrowB2
+{
+	font-size: 25px;
+	color: var(--arrow);
+	display: inline-block;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	vertical-align:top;
+	visibility: hidden;
+}
+#arrowR3, #arrowG3, #arrowB3
+{
+	font-size: 25px;
+	color: var(--arrow);
+	display: inline-block;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	vertical-align:top;
+	visibility: hidden;
+}
+#arrowR4, #arrowG4, #arrowB4
+{
+	font-size: 25px;
+	color: var(--arrow);
+	display: inline-block;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	vertical-align:top;
+	visibility: hidden;
+}
+#arrowR5, #arrowG5, #arrowB5
+{
+	font-size: 25px;
+	color: var(--arrow);
+	display: inline-block;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	vertical-align:top;
+	visibility: hidden;
+}
+
+#userInput
+{
+	position: fixed;     
+	text-align: center;    
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 25%; 
+	width: 100%;
+	background-color: black;
+	/*color: white;*/
+}
+
+#answer
+{
+	visibility: hidden;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+	color: salmon;
+}
+
+#submitButton
+{
+	/*border-style: 0px;*/
+	background-color: #33ff77;
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 3px;
+
+}
+
+#submitButton:hover
+{
+	/*border-style: 0px;*/
+	background-color: red;
+
+}
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*Specific Classes*/
+.colourInput
+{
+	margin: 0 auto;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	margin-right: 25px;
+	padding: 5px;
+	font-size: 35px;
+	height: 50px;
+	width: 100px;
+}
+
+.inputChance
+{
+	text-align: center;
+}
+
+.chance1, .chance2, .chance3, .chance4, .chance5
+{
+	border-radius: 5px;
+	padding: 5px;
+	margin: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+	display: inline-block;
+	line-height: 40px;
+	height: 40px;
+	width: 85px;
+	background-color: #ff7b6b;
+	border: 3px solid #ff7b6b;
+	font-size: 25px;
+	vertical-align: middle;
+	font-family: 'Rubik', sans-serif;
+	color: white;
+}
