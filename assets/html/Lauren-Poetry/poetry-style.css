@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+.conversation
+{
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: 'Golos Text', sans-serif;
+}
+
+.message
+{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.sender
+{
+  justify-content: flex-end;
+}
+
+.message-text
+{
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 70%;
+}
+
+.sender .message-text
+{
+  background-color: #1982FC;
+  color: #FFFFFF;
+}
+
+.receiver .message-text
+{
+  background-color: #F0F0F0;
+  color: #000;
+}
+
+.date
+{
+	color: #99A1A3;
+	text-align: center;
+	padding-bottom: 10px;
+
+}
+
+.receiver-name
+{
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+footer
+{
+	text-align: center;
+	font-size: 10px;
+	font-family: 'Golos Text', sans-serif;
+}
+
+img
+{
+	width: 75%;
+}
