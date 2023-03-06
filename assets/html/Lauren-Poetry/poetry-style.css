@@ -42,7 +42,8 @@
 {
 	color: #99A1A3;
 	text-align: center;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+	padding-top: 20px;
 
 }
 
@@ -53,11 +54,18 @@
 	padding-bottom: 10px;
 }
 
+.read-receipts
+{
+	text-align: right;
+	color: #C0C0C0;
+}
+
 footer
 {
 	text-align: center;
 	font-size: 10px;
 	font-family: 'Golos Text', sans-serif;
+	padding-top: 20px;
 }
 
 img
