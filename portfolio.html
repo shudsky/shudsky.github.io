@@ -3,6 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" type="text/css" href="index.css" /><!--Linking css sheet-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 		<script src="index.js"></script><!--Linking js file-->
 		<title>shudsky</title>
 		<!-- <link id="iconimg" rel="icon" href="Images/skull_light.png"/> -->
@@ -10,10 +11,19 @@
 
 	<body>
 		<div class="bg-cover" class="none"></div>
-		<h1 id="main-heading">SHUDSKY</h1>
+		<h1 id="main-heading"><a href="index.html">SHUDSKY</a></h1>
 		<h2 id="second-heading">Siovan Gecelovsky | she/her</h2>
 		<h3 id="third-heading">PORTFOLIO</h3>
 		<table id="itchio-games"><!-- Itch.io games -->
+			<tr><td>
+				<h2 class="element-heading"><a href="https://sarahno.itch.io/mount-roller-dispatch">Mount Roller Dispatch</a></h2>
+				<div class="image"><img src="assets/images/Mount-Roller-Dispatch_title-image.png" alt="Image not found." width='300' height='auto'/></div>
+				<p>
+					<div class="writeup">
+						A game created for the 2023 iteration of Ubisoft Montreal's Game Lab competition, which has students across universities in Quebec compete to create the best game prototype in 10 weeks. The theme of the 2023 edition was "Arcade". I served as an artist and contributed to graphic design and 3D modeling.
+					</div>
+				</p>
+			</td></tr>
 			<tr><td>
 				<h2 class="element-heading"><a href="https://sarahno.itch.io/hiding-in-plain-sight">Hiding in Plain Sight</a></h2>
 				<div class="image"><img src="assets/images/title_hidinginplainsight.png" alt="Image not found." width='500' height='auto'/></div>
@@ -101,9 +111,38 @@
 					</div>
 				</p>
 			</td></tr>
+
+			<tr><td>
+				<h2 class="element-heading"><a href="assets/html/Lauren-Poetry/poetry.html">Lauren Poetry Exercise</a></h2>
+				<div class="image"><img src="assets/images/lauren_poetry-exercise7.png" alt="Image not found." width='500' height='auto'/></div>
+				<p>
+					<div class="writeup">
+						A website meant to look like an iMessage conversation that I created to go along with a poetry project done by Lauren Gecelovsky.
+
+						Completed in a few hours in HTML and CSS, with the help of ChatGPT.
+					</div>
+				</p>
+			</td></tr>
 		</table>
 
 		<table id="art-projects"><!-- Art misc projects -->
+			<tr><td>
+				<h2 class="element-heading">Video Series — Untitled</h2>
+				<video width="750" height="auto" controls>
+					<source src="assets/videos/Gecelovsky_Wunderkammer.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<video width="750" height="auto" controls>
+					<source src="assets/videos/Gecelovsky_The-New-Normal.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				</div>
+				<p>
+					<div class="writeup">
+						This is a series of two videos, both created for a video and sound production course. Everything was done in Premiere. All assets are by me, except for the main song heard in the second video, which is the instrumental version of a song by Lauren Gecelovsky.
+					</div>
+				</p>
+			</td></tr>
 			<tr><td>
 				<h2 class="element-heading">3D Model - Baba Yaga</h2>
 				<div class="image"><img src="assets/images/blender_babayaga_1.png" alt="Image not found." width='500' height='auto'/>
@@ -132,10 +171,65 @@
 					</div>
 				</p>
 			</td></tr>
+			<tr><td>
+				<h2 class="element-heading">Detroit Environmental Racism Poster</h2>
+				<div class="image"><img src="assets/images/detroit_environtmental_racism_poster.jpg" alt="Image not found." width='500' height='auto'/>
+				<p>
+					<div class="writeup">
+						This is a poster concept I created for a graphic design class. The theme of the poster is environmental racism, especially as it pertains to Michigan in the United States.
+					</div>
+				</p>
+			</td></tr>
+			<tr><td>
+				<h2 class="element-heading">Album Concept Mockup</h2>
+				<div class="image"><img src="assets/images/tmhyrf_mockup-front.jpg" alt="Image not found." width='750' height='auto'/>
+				<div class="image"><img src="assets/images/tmhyrf_mockup-back.jpg" alt="Image not found." width='750' height='auto'/>
+				<p>
+					<div class="writeup">
+						This is concept album artwork done for a graphic design class. The album whose artwork is being redesigned is "Tell Me How You Really Feel", a 2018 album by Australian musician Courtney Barnett.
+					</div>
+				</p>
+			</td></tr>
+
 		</table>
+
+		<!--========================================================================================================================================-->
+
+		<!--Menu-->
+		<a class="hamburger-shell">
+			<div class="hamb top"><img src="assets/images/bone_top.png" alt="Image not found." width='65' height='auto'/><br></div>
+			<div class="hamb middle"><img src="assets/images/bone_bottom.png" alt="Image not found." width='65' height='auto'/></div>
+			<div class="menu-name">MENU</div><div class="menu-name">MENU</div>
+
+			<dl id="menu">
+					<a class="list-a" href="about-me.html"><dt>About Me</dt></a>
+<!-- 						<div class="list-b">
+							<a href = "#week4blog"><dd>Week IV<dd></a>
+							<a href = "#week5blog"><dd>Week V<dd></a>
+							<a href = "#week6blog"><dd>Week VI<dd></a>
+							<a href = "#week7blog" ><dd>Week VII<dd></a>
+						</div> -->
+					<a class="list-a" href="assets/pdfs/Gecelovsky_CV.pdf" target="_blank"><dt>CV</dt></a>
+						<!-- <div class="list-b">
+							<a href = "#week4blog"><dd>Week IV<dd></a>
+							<a href = "#week5blog"><dd>Week V<dd></a>
+							<a href = "#week6blog"><dd>Week VI<dd></a>
+							<a href = "#week7blog" ><dd>Week VII<dd></a>
+						</div> -->
+
+					<a class="list-a" href="portfolio.html"><dt>Portfolio</dt></a><!--&#9660 --></a><!--&#9650 -->
+						<div class="list-b">
+							<a href = "#itchio-games"><dd>Games<dd></a>
+							<a href = "#web-projects"><dd>Web Projects<dd></a>
+							<a href = "#art-projects"><dd>Misc. Art Projects<dd></a>
+						</div>
+			</dl>
+		</a>
+
+		<!--========================================================================================================================================-->
 		
 		<footer>
-			<p>© 2022 by Siovan Gecelovsky.</p>
+			<p>© 2023 by Siovan Gecelovsky.</p>
 		</footer>
 	</body>
 </html>

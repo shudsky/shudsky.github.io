@@ -8,6 +8,9 @@
 {
 	--light: #D1DCDA;
 	--body: #000000;
+	--accent-a: #B34545;/*Accent colour a*/
+	--accent-b: #E63636;/*Accent colour b*/
+	--tablebkg: #E3E9E8;
 }
 
 body
@@ -71,6 +74,17 @@ table
 	margin-bottom: -25px;
 	color: var(--dark);
 }
+#main-heading a
+{
+	font-family: 'IM Fell English', serif;
+	font-style: italic;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: -25px;
+	color: var(--dark);
+	text-decoration: none;
+}
 
 #second-heading/*Heading used for "Siovan Gecelovsky"*/
 {
@@ -102,4 +116,157 @@ table
 #art-projects
 {
 	background-color: #706563;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*Menu Icon*/
+/*FROM: https://codepen.io/cuonoj/pen/XWWdoNP*/
+.bg-cover
+{/*Background*/
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--light);/*Change this to make the entire page change colour when menu is selected*/
+	z-index: 1;
+	transition: all 350ms ease;/*Transition for background colour fade-in*/
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.reveal
+{
+	opacity: .85;
+	display: block;
+	pointer-events: auto;
+	visibility: visible;
+}
+
+.hamburger-shell
+{
+	margin: 0;
+	position: fixed;
+	overflow: hidden;
+	width: 120px;
+	height: 100px;
+	overflow: auto;
+	right: calc(100% - 150px);
+	top: 20px;
+	cursor: pointer;
+	z-index: 2;
+	background-color: white-space;
+}
+
+.top, .middle
+{
+	position: absolute;
+	width: 65px;
+	height: 10px;
+	left: 15px;
+	background-color: white-space;
+	transition: all 550ms ease-in-out;
+	top: 20px;
+	filter: invert(var(--invert));
+}
+
+.middle{top: 40px;}
+
+#menu
+{
+	position: fixed;
+	right: calc(100% - 280px);
+	top: 10px;
+	color: var(--dark);
+	display: none;
+	margin: 100px 30px;
+	text-decoration: none;
+	font-family: 'IM Fell Great Primer', serif;
+	font-weight: 100;
+	font-size: 20px;
+	padding: 24px;
+	width: 200px;
+	text-align: left;
+	z-index: 2;
+}
+.list-a/*List level A*/
+{
+	color: var(--dark);
+	line-height: 45px;
+	font-size: 30px;
+	text-decoration: none;
+}
+.list-a:hover
+{
+	color: var(--accent-a);
+	transition: all 350ms ease;/*Hover colour change transition time*/
+	text-decoration: none;
+	cursor: pointer;
+}
+.list-a:after
+{
+	color: var(--accent-a);
+	transition: all 150ms ease;/*Hover colour change transition time*/
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.list-b a/*List level B*/
+{
+	color: var(--dark);
+	text-decoration: none;
+	font-size: 25px;
+}
+.list-b a:hover/*List level B*/
+{
+	color: var(--accent-b);
+	transition: all 150ms ease;/*Hover colour change transition time*/
+	text-decoration: none;
+	cursor: pointer;
+}
+.rotate/*This is basically one of the hamburger menu lines*/
+{
+	transform: rotate(147deg);
+	-webkit-transform: rotate(147deg);
+	top: 30px;
+	background-color: white-space;
+	height: 10px;
+}
+
+.rotate-back/*This is the other hamburger menu line*/
+{
+	transform: rotate(-147deg);
+	-webkit-transform: rotate(-147deg);
+	top: 30px;
+	background-color: white-space;
+	height: 10px;
+}
+
+.top
+{
+-webkit-animation-delay: 100ms;
+}
+
+.middle
+{
+-webkit-animation-delay: 250ms;
+}
+
+.menu-name
+{
+	font-family: 'IM Fell English', serif;
+	font-weight: 900;
+	color: var(--dark);
+	font-size: 25px;
+	text-decoration: none;
+	position: absolute;
+	top: 56px;
+	left: 6px;
+	transition: all 550ms;/*Transition for menu moving down*/
+}
+
+.bump
+{
+	top: 64px;
 }
