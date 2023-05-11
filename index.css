@@ -6,10 +6,10 @@
 /*General Classes*/
 :root
 {
-	--light: #D1DCDA;
-	--body: #000000;
-	--accent-a: #B34545;/*Accent colour a*/
-	--accent-b: #E63636;/*Accent colour b*/
+	--light: #000000;
+	--body: #D1DCDA;
+	--accent-a: #05a8a8;/*Accent colour a*/
+	--accent-b: #057A7A;/*Accent colour b*/
 	--tablebkg: #E3E9E8;
 }
 
@@ -37,6 +37,11 @@ table
 	padding-bottom: 50px;
 }
 
+a
+{
+	color: var(--accent-a);
+}
+
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*Classes*/
 .image
@@ -60,6 +65,7 @@ table
 	font-size: 20px;
 	text-align: left;
 }
+
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*IDs*/
 
@@ -116,6 +122,11 @@ table
 #art-projects
 {
 	background-color: #706563;
+}
+
+#siovan
+{
+	color: var(--accent-a);
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
@@ -196,6 +207,8 @@ table
 	line-height: 45px;
 	font-size: 30px;
 	text-decoration: none;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 .list-a:hover
 {
